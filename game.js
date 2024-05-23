@@ -61,7 +61,7 @@ function gameOver() {
 $(".btn").on("click", function() {
     var userChosenColor = $(this).attr("id");
     if (level === 0) {
-        gameOver();
+        nextSequence();
     } else {
     playSound(userChosenColor);
     userClickedPattern.push(userChosenColor);
